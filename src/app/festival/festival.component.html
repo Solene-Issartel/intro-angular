@@ -1,0 +1,9 @@
+<p>
+  festival works!
+</p>
+<div> Il y a {{nbFestival}} !</div>
+<ul>
+  <li *ngFor="let festival of festivals">Le festival {{festival.name}} possède {{festival.tables}} tables.</li>
+</ul>
+<button (click)="addFestival()">Add festival</button>
+<button (click)="changeNameFestival()">Update first festival </button>
